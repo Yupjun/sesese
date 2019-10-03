@@ -2,8 +2,8 @@
 
 * 쎄쎄쎄 대회의 목적은 현재의 Sota? 인 알고리즘 A를 이기는 코드를 짜는 것입니다.
 
-## 현재 우승자 : FKgk (https://github.com/FKgk) 
-* Winrate : 70%
+## 현재 우승자 : Kinetic (https://github.com/Kinetic27) 
+* Winrate : 100% Win rate: 100% (for FKgk B model) 
 
 
 # 참여 방법
@@ -16,21 +16,18 @@ def B_start(A_hist,B_hist,my_gi,enemy_gi):
     global playerB
     my_gi = playerB
     enemy_gi = playerA
-    val = random.uniform(0, 1)
-    if my_gi ==0:
-        if enemy_gi==0:
-            return "gi"
-        if enemy_gi >0:
-            if val>0.5:
-                return "shield"
-            else:
-                return "gi"
-    elif my_gi ==1 or my_gi ==2:
-        return random.choice(["gi","shield","pa","teleport"])
-    elif my_gi >=3:
-        return random.choice(["gi","shield","pa","energypa","teleport"])
+    
+    if(len(A_hist)>100 and my_gi==1 and enemy_gi==1):
+        return 'pa'
+    val=random.uniform(0, 1)
+    if(my_gi==0):
+        return ('gi' if (enemy_gi==0) else 'shield')
+    elif(my_gi==1):
+        return ('gi' if (enemy_gi==0 and val<=0.75) else 'pa')
+    elif(my_gi==2):
+        return ('gi' if ((enemy_gi>1 and val>0.5) or (enemy_gi==1)) else 'pa')
     else:
-        print("B error")
+        return 'energypa'
 </code></pre>
 
 * A_hist에는 이중 리스트 형태로 A가 냈던(현재 A가 상대방입니다) 패를 알려줍니다
