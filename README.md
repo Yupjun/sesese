@@ -5,6 +5,7 @@
 ## 현재 우승자 : Yupjun , kicKORhIT-16384-needSYDney,Kinetic27
 
 
+# 참여 방법
 * 수정해주셔야 하는 부분은 아래의 부분입니다.
 
 <pre><code>
