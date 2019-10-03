@@ -1,6 +1,10 @@
 # 쎄쎄쎄 Readme
 
 * 쎄쎄쎄 대회의 목적은 현재의 Sota? 인 알고리즘 A를 이기는 코드를 짜는 것입니다.
+
+## 현재 우승자 : Yupjun , kicKORhIT-16384-needSYDney,Kinetic27
+
+
 * 수정해주셔야 하는 부분은 아래의 부분입니다.
 
 <pre><code>
