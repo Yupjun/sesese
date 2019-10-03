@@ -2,7 +2,8 @@
 
 * 쎄쎄쎄 대회의 목적은 현재의 Sota? 인 알고리즘 A를 이기는 코드를 짜는 것입니다.
 
-## 현재 우승자 : Yupjun , kicKORhIT-16384-needSYDney,Kinetic27
+## 현재 우승자 : FKgk (https://github.com/FKgk) 
+* Winrate : 68.59%
 
 
 # 참여 방법
